@@ -119,6 +119,107 @@ button > img {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(158, 36%, 37%); 
 }
 
+/* Media Queries */
+
+@media only screen and (min-width: 700px) {
+    
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        width: 700px;
+        height: 500px;
+    }
+    
+    .photo-desktop {
+        display: block;
+    }
+    
+    .photo-desktop > img {
+        display: block;
+        position: relative;
+        width: 350px;
+        border-radius: 20px 0 0 20px;
+        height: 500px;
+
+    }
+
+    .photo-mobile {
+        display: none;
+    }
+    
+    .photo-mobile > img {
+        display: none;
+        position: absolute;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-weight: 500;
+        width: 246px;
+        height: 100%;
+        padding-right: 50px;
+    }
+    
+    .info > h2 {
+        font-size: 12px;
+        letter-spacing: 10px;
+        margin: 20px 0;
+    }
+    
+    .info > h1 {
+        font-family: 'Fraunces', serif;
+        margin: 0;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    
+    #description {
+     color: hsl(228, 12%, 48%);
+     font-weight: 500;
+     margin-bottom: 0;
+    }
+    
+    #sale-price {
+        color: hsl(158, 36%, 37%);
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 30px;
+        display: inline-block;
+    
+    }
+    
+    #reg-price {
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+        text-decoration: line-through;
+        margin: 0 0 15px 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    #button {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    button {
+        width: 100%;
+        height: 50px;
+        margin: 0 0 10px 0;
+    }
+    
+    
+    .attribution { 
+        font-size: 11px; text-align: center; 
+        margin-top: 15px;
+    }
+
+}
