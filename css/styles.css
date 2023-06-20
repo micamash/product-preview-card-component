@@ -1,0 +1,87 @@
+html {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    max-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.photo-desktop {
+    display: none;
+}
+
+.photo-desktop > img {
+   display: none;
+}
+
+.photo-mobile > img {
+    max-height:100%; 
+    max-width:100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info > h2 {
+
+}
+
+.info > h1 {
+
+}
+
+.info > p:nth-child(1) {
+
+}
+
+#sale-price {
+
+}
+
+#reg-price {
+
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    position: absolute; 
+    bottom: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
